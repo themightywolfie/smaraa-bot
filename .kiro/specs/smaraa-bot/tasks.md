@@ -7,14 +7,14 @@
   - Create package.json files with required dependencies (discord.js, express, pg, openai, langchain)
   - _Requirements: 6.4, 9.1_
 
-- [ ] 2. Implement database schema and migrations
-  - [ ] 2.1 Create PostgreSQL database schema with pgvector extension
+- [x] 2. Implement database schema and migrations
+  - [x] 2.1 Create PostgreSQL database schema with pgvector extension
     - Write SQL migration files for archived_messages, settings, and audit_log tables
     - Create vector indexes using ivfflat with cosine distance operators
     - Add composite B-tree indexes for filtering by guild_id, channel_id, and created_at
     - _Requirements: 1.2, 4.1, 5.2_
 
-  - [ ] 2.2 Implement database client and connection management
+  - [x] 2.2 Implement database client and connection management
     - Create DatabaseClient class with connection pooling using pg library
     - Implement query methods with proper error handling and logging
     - Add health check functionality for database connectivity
